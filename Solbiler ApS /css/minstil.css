@@ -1,0 +1,188 @@
+/* Basic CSS reset */
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.hoved_sektion {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.sidehoved {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.login_symbol {
+    display: flex;
+    justify-content: center;
+}
+
+.billed_sektion {
+    background-image: url('../billeder/car.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formular {
+    position: relative;
+    top: 80px;
+    width: 400px;
+    height: 245px;
+    background-color: rgb(31, 142, 245);
+    padding: 15px;
+    margin-left: 120px;
+    font-family: 'Itim', cursive;
+    border-radius: 12px;
+}
+
+.formular_overskrift {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.formular_felter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#afhentning, #aflevering, #personer {
+    width: 9.5rem;
+    text-align: right;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+#kufferter {
+    width: 9.5rem;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.etiket {
+    margin: 15px 0 5px;
+    display: block;
+}
+
+.formular_knap {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.knap {
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px 40px;
+    border-radius: 12px;
+}
+.resetknap {
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px 40px;
+    border-radius: 12px;
+    margin-left: 2%;
+}
+
+.bil_sektion {
+    padding: 50px 0;
+    max-width: 1024px;
+    /* Forhøjet fra 800px */
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.bil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid lightgray;
+    /* Farve ændret fra black */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.bilMM {
+    font-size: 1.5rem;
+    width: 13rem;
+}
+
+.bildetaljer {
+    width: 13rem;
+}
+
+.prisogbook {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 6rem;
+}
+
+.lejeudgift {
+    font-size: 1.5rem;
+}
+
+.booknu_knap {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 8rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+    .formular {
+        margin: 0 auto;
+    }
+    .bil {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        align-items: center;
+    }
+    .bilMM, .bildetaljer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .billed_sektion {
+        height: 475px;
+    }
+    .formular {
+        width: 310px;
+        height: 375px;
+    }
+}

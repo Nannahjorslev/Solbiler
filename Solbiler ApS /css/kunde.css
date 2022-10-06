@@ -1,0 +1,132 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.login_sektion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.login_symbol {
+    margin-right: 5px;
+}
+
+.billed_sektion {
+    background-image: url('../billeder/car-1318724_1280.jpg');
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hovedindhold {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lejeoplysninger {
+    background-color: rgb(244, 133, 183);
+    width: 500px;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
+.udstyrssektion {
+    max-width: 700px;
+    background-color: rgb(32, 89, 219);
+    padding: 20px;
+}
+
+#caricon{
+    display: flex;
+    justify-self: center;
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 5px 0 0;
+}
+
+.checkboks {
+    margin-top: 10px;
+}
+
+.flexsektion {
+    width: 275px;
+    margin: 25px;
+}
+
+.formfelt {
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.videreknap {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 12rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.totaldkk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.totalindhold {
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+
+.formfelt {
+    width: 275px
+}
+
+#postnr {
+    width: 100px;
+}
